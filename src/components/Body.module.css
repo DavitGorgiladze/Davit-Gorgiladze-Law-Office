@@ -1,0 +1,78 @@
+.body {
+  height: 100vh;
+  position: relative;
+}
+
+.bodycontainer {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  animation-name: slide;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+.namefield {
+  position: absolute;
+  right: 225px;
+  top: 150px;
+}
+
+.namefield div {
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 50px;
+}
+
+.field {
+  font-size: 20px;
+}
+
+.callcontainer {
+  position: absolute;
+  right: 220px;
+  top: 350px;
+  padding: 15px;
+  background-color: red;
+}
+
+.callcontainer div {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: start;
+  padding-bottom: 5px;
+  color: wheat;
+}
+
+.callcontainer p {
+  font-style: italic;
+  display: inline-block;
+}
+
+.principles {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  right: 30px;
+  top: 500px;
+  background-color: rgba(16, 5, 5, 0.3);
+  padding: 50px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
