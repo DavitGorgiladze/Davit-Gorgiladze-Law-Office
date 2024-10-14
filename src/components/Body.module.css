@@ -5,7 +5,7 @@
 
 .bodycontainer {
   position: absolute;
-  top: 100px;
+  top: 20px;
   width: 100%;
   height: 100%;
   animation-name: slide;
@@ -16,8 +16,8 @@
 
 .namefield {
   position: absolute;
-  right: 225px;
-  top: 150px;
+  right: 160px;
+  top: 140px;
 }
 
 .namefield div {
@@ -28,19 +28,20 @@
 }
 
 .name {
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .field {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .callcontainer {
   position: absolute;
-  right: 220px;
-  top: 350px;
+  right: 160px;
+  top: 320px;
   padding: 15px;
   background-color: red;
+  width: 295px;
 }
 
 .callcontainer div {
@@ -50,6 +51,7 @@
   text-align: start;
   padding-bottom: 5px;
   color: wheat;
+  font-size: 12px;
 }
 
 .callcontainer p {
@@ -58,13 +60,13 @@
 }
 
 .principles {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: absolute;
   right: 30px;
-  top: 500px;
+  top: 420px;
   background-color: rgba(16, 5, 5, 0.3);
-  padding: 50px;
+  padding: 40px;
 }
 
 @keyframes slide {

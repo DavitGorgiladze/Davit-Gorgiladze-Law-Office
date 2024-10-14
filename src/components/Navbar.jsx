@@ -22,10 +22,9 @@ export default function Navbar() {
           <li><Link to='/contact'>Contact</Link></li>
         </ul>
         <div className={classes.imgs}>
-          <div>
-            <NightlightRoundOutlinedIcon fontSize="large" />
+          <div className={classes.languages}>
+            <NightlightRoundOutlinedIcon fontSize="medium" />
           </div>
-          {/* <img className={classes.language} src="../src/assets/flag-georgian.png" alt="change dark mode" /> */}
           <div>ENG</div>
           <div>GEO</div>
           <div>RUS</div>
