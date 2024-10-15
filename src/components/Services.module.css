@@ -1,3 +1,158 @@
-.servicescontainer{
-    height: 100vh;
+* {
+  font-family: sans-serif;
+}
+.servicescontainer {
+  height: 100vh;
+}
+
+.servicelist ul:nth-child(1) {
+  background-color: rgb(6, 3, 3, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 130px;
+  left: 340px;
+  list-style: none;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: service1;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+.servicelist ul:nth-child(2) {
+  background-color: rgb(6, 3, 3, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 130px;
+  left: 800px;
+  list-style: none;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: service2;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+.servicelist ul:nth-child(3) {
+  background-color: rgb(6, 3, 3, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  bottom: 5px;
+  left: 340px;
+  list-style: none;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: service1;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+.servicelist ul:nth-child(4) {
+  background-color: rgb(6, 3, 3, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 445px;
+  left: 800px;
+  list-style: none;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: service2;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+.servicelist ul:hover {
+  background-color: white;
+  color: gray;
+}
+
+.servicelist li:hover {
+  color: rgb(237, 15, 15);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.servicepopup {
+  background-color: rgb(237, 10, 10, 0.3);
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  bottom: 400px;
+  left: 1315px;
+  list-style: none;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 35px;
+  animation: dial 1s linear 2s;
+}
+
+@keyframes service1 {
+  from {
+    transform: translateX(-350px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes service2 {
+  from {
+    transform: translateX(-750px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes dial {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
 }

@@ -10,6 +10,11 @@
   z-index: 1;
 }
 
+/* .nav-black {
+  background-color: white;
+  color: white;
+} */
+
 .logocontainer {
   padding-left: 10px;
 }
@@ -62,14 +67,13 @@
 }
 
 .imgs div:hover {
-cursor: pointer;
-color: rgb(186, 186, 136);
+  cursor: pointer;
+  color: rgb(186, 186, 136);
 }
-
 
 a {
   text-decoration: none;
-  color:  white;
+  color: white;
 }
 
 a:hover {
@@ -77,3 +81,22 @@ a:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1150px) {
+  .lists {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .lists li {
+    padding: 0 10px;
+  }
+
+  a:hover {
+    color: red;
+    cursor: pointer;
+  }
+}

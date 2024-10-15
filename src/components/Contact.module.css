@@ -1,3 +1,39 @@
-.contactcontainer{
-    height: 100vh;
+.contactcontainer {
+  height: 100vh;
+  position: relative;
+}
+
+.contactheading {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  top: 140px;
+  left: 400px;
+  font-weight: bold;
+}
+
+.contactinfo {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  top: 440px;
+  left: 160px;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.contactinfo:hover {
+  background-color: white;
+  color: black;
+}
+
+.contactinfo div:nth-child(2) {
+  color: red;
+  text-decoration: solid;
+}
+
+.contactinfo div:nth-child(3) {
+  color: red;
 }
