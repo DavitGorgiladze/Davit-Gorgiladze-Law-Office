@@ -67,5 +67,35 @@
   border: 1px solid white;
 }
 
-@media screen and (min-width) {
+/* 1366 PIXELS */
+
+@media screen and (max-width: 1367px) {
+  .namecont h1 {
+    position: absolute;
+    top: 140px;
+    right: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+  }
+
+  .namecont h2 {
+    position: absolute;
+    top: 240px;
+    right: 185px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 60px;
+  }
+
+  .namecont h3 {
+    position: absolute;
+    top: 305px;
+    right: 185px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
 }
+
+/* 1366 PIXELS */

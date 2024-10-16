@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const [menuClicked, setMenuClicked] = useState(false);
   // const [navBlack, setNavBlack] = useState(false);
 
   // useEffect(() => {
@@ -13,10 +14,14 @@ export default function Navbar() {
   //   });
   // }, []);
 
+  const handleMenu = () => {
+    setMenuClicked((menu) => !menu);
+  };
+
   return (
     <>
       <nav
-        className={classes.navbar}
+        className={`${classes.navbar} ${menuClicked ? "" : classes.mobilebar}`}
         // className={`${classes.navbar} ${navBlack ? classes["nav-black"] : ""}`}
       >
         <div className={classes.logocontainer}>
@@ -29,7 +34,9 @@ export default function Navbar() {
           </div>
         </div>
         {/* <div className={classes.sidebar}>TRIGGER</div> */}
-        <ul className={classes.lists}>
+        <ul
+          className={`${classes.lists} ${menuClicked ? "" : classes.hidemenu} `}
+        >
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -45,7 +52,17 @@ export default function Navbar() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <div className={classes.imgs}>
+        <span>
+          <img
+            onClick={handleMenu}
+            className={classes.menu}
+            src="../../src/assets/menu.png"
+            alt=""
+          />
+        </span>
+        <div
+          className={`${classes.imgs} ${menuClicked ? "" : classes.hidemenu}`}
+        >
           <div className={classes.languages}>
             <NightlightRoundOutlinedIcon fontSize="medium" />
           </div>

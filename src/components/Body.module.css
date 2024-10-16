@@ -79,6 +79,87 @@
   }
 }
 
-@media screen and (min-width) {
-  
+/* 2560 PIXELS */
+
+/* I was unable to set this res parameters */
+
+/* 2560 PIXELS */
+
+/* 1920 PIXELS */
+
+@media screen and (min-width: 1919px) {
+  .namefield {
+    top: 240px;
+  }
+
+  .name {
+    font-size: 45px;
+  }
+
+  .field {
+    font-size: 20px;
+  }
+
+  .callcontainer {
+    top: 420px;
+    width: 380px;
+  }
+
+  .callcontainer div {
+    font-size: 14px;
+  }
+
+  .principles {
+    font-size: 25px;
+    top: 520px;
+  }
 }
+
+/* 1920 PIXELS */
+
+/* 1366 PIXELS */
+
+@media screen and (max-width: 1367px) {
+  .namefield {
+    top: 150px;
+    right: 100px;
+  }
+
+  .field {
+    font-size: 20px;
+  }
+
+  .callcontainer {
+    top: 290px;
+  }
+
+  .principles {
+    top: 385px;
+    right: 60px;
+  }
+}
+
+/* 1366 PIXELS */
+
+/* PHONE */
+
+@media screen and (max-width: 431px) {
+  .bodycontainer div {
+    left: 100px;
+  }
+
+  .name {
+    width: 300px;
+  }
+
+  .field {
+    width: 300px;
+    font-size: 18;
+  }
+
+  .principles {
+    text-align: center;
+  }
+}
+
+/* PHONE */

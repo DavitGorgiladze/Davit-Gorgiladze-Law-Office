@@ -56,7 +56,7 @@
   position: absolute;
   width: 300px;
   height: 250px;
-  bottom: 5px;
+  top: 445px;
   left: 340px;
   list-style: none;
   padding: 20px 0;
@@ -148,11 +148,52 @@
 }
 
 @keyframes dial {
-  0%{
+  0% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
+
+/* 1900pixels */
+
+/* @media screen and (min-width: 1900px) {
+  .servicelist ul:nth-child(1) {
+    width: 400px;
+    height: 300px;
+    top: 160px;
+    left: 390px;
+  }
+
+  .servicelist ul:nth-child(2) {
+    width: 400px;
+    height: 300px;
+    top: 160px;
+    left: 1000px;
+  }
+  .servicelist ul:nth-child(3) {
+    width: 400px;
+    height: 300px;
+    top: 600px;
+    left: 390px;
+  }
+  .servicelist ul:nth-child(4) {
+    width: 400px;
+    height: 300px;
+    top: 600px;
+    left: 1000px;
+  }
+
+  
+.servicepopup {
+  background-color: rgb(237, 10, 10, 0.3);
+  width: 200px;
+  height: 120px;
+  top: 250px;
+  left: 1715px;
+}
+} */
+
+/* 1900 pixels */

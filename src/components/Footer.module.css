@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
-@media screen and (min-width) {
-  
+@media screen and (max-width: 431px) {
+  .footercontainer div {
+    font-size: 10px;
+    z-index: 1;
+    padding: 0;
+  }
 }

@@ -81,7 +81,31 @@ a:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1150px) {
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .lists {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .lists li {
+    padding: 0 30px;
+  }
+
+  .imgs div {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
   .lists {
     list-style: none;
     display: flex;
@@ -92,11 +116,113 @@ a:hover {
   }
 
   .lists li {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
-  a:hover {
-    color: red;
-    cursor: pointer;
+  .imgs div {
+    padding: 6px;
+    font-size: 9px;
+  }
+}
+
+/* needs to be changed on 650 */
+
+@media screen and (max-width: 650px) {
+  .lists {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .lists li {
+    padding: 0;
+  }
+
+  .imgs div {
+    padding: 4px;
+    font-size: 6px;
+  }
+
+  .logo {
+    width: 45px;
+  }
+  .logocontainer div {
+    font-size: 10px;
+  }
+}
+
+/*  */
+
+@media screen and (max-width: 431px) {
+  /*  */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 10, 10, 0.7);
+    z-index: 1;
+    width: 180px;
+    padding-top: 70px;
+    height: 100vh;
+  }
+
+  /*  */
+
+  .lists {
+    top: 180px;
+    left: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+  }
+
+  .lists li {
+    padding: 30px 20px;
+  }
+
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+  }
+
+  .imgs div {
+    padding: 8px 6px;
+    font-size: 9px;
+  }
+
+  .logocontainer {
+    position: absolute;
+    top: 5px;
+    left: -255px;
+  }
+  .menu {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    z-index: 3;
+  }
+
+  .hidemenu {
+    position: absolute;
+    left: 200px;
+  }
+
+  .mobilebar {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
