@@ -1,10 +1,20 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import NightlightRoundOutlinedIcon from "@mui/icons-material/NightlightRoundOutlined";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import "./i18next";
 
-export default function Navbar() {
+export default function Navbar({ darkmode, toggle }) {
+  const { t, i18n } = useTranslation();
+  const languages = [
+    { code: "en", name: "ENG" },
+    { code: "ge", name: "GEO" },
+    { code: "ru", name: "RUS" },
+  ];
+
   const [menuClicked, setMenuClicked] = useState(false);
   // const [navBlack, setNavBlack] = useState(false);
 
@@ -29,8 +39,8 @@ export default function Navbar() {
             <img className={classes.logo} src="../src/assets/logo.png" alt="" />
           </Link>
           <div>
-            <div>Davit Gorgiladze Law Office</div>
-            <div>Make your best deals work in here!</div>
+            <div> {t("logoName")}</div>
+            <div>{t("logoOffer")}</div>
           </div>
         </div>
         {/* <div className={classes.sidebar}>TRIGGER</div> */}
@@ -38,18 +48,18 @@ export default function Navbar() {
           className={`${classes.lists} ${menuClicked ? "" : classes.hidemenu} `}
         >
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("home")}</Link>
           </li>
           <li>
             {" "}
-            <Link to="/about">About</Link>
+            <Link to="/about">{t("about")}</Link>
           </li>
           <li>
             {" "}
-            <Link to="/services">Services</Link>
+            <Link to="/services">{t("services")}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{t("contact")}</Link>
           </li>
         </ul>
         <span>
@@ -64,11 +74,27 @@ export default function Navbar() {
           className={`${classes.imgs} ${menuClicked ? "" : classes.hidemenu}`}
         >
           <div className={classes.languages}>
-            <NightlightRoundOutlinedIcon fontSize="medium" />
+            {!darkmode ? (
+              <NightlightRoundOutlinedIcon fontSize="medium" onClick={toggle} />
+            ) : (
+              <LightModeIcon fontSize="medium" onClick={toggle} />
+            )}
           </div>
-          <div>ENG</div>
-          <div>GEO</div>
-          <div>RUS</div>
+          <div>
+            <button onClick={() => i18n.changeLanguage(languages[0].code)}>
+              ENG
+            </button>
+          </div>
+          <div>
+            <button onClick={() => i18n.changeLanguage(languages[1].code)}>
+              GEO
+            </button>
+          </div>
+          <div>
+            <button onClick={() => i18n.changeLanguage(languages[2].code)}>
+              RUS
+            </button>
+          </div>
         </div>
       </nav>
     </>

@@ -71,6 +71,18 @@
   color: rgb(186, 186, 136);
 }
 
+.imgs button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.imgs button:hover {
+  cursor: pointer;
+  color: rgb(186, 186, 136);
+}
+
 a {
   text-decoration: none;
   color: white;

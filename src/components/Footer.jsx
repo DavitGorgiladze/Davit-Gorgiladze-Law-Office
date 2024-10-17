@@ -1,40 +1,41 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
+import "./i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <div className={classes.footercontainer}>
       <div>
         <div>
-          <a href="https://matsne.gov.ge/" target="_blank">
-            Matsne
-          </a>
+          <a href="https://matsne.gov.ge/" target="_blank">{t("matsne")}</a>
         </div>
         <div>
           <a href="https://www.parliament.ge/" target="_blank">
-            Parliament of Georgia
+            {t("parliament")}
           </a>
         </div>
         <div>
           <a href="https://www.gov.ge/index.php?sec_id=1" target="_blank">
-            Goverment of Georgia
+          {t("government")}
           </a>
         </div>
         <div>
           <a href="https://www.supremecourt.ge/" target="_blank">
-            Supreme Court of Georgia
+          {t("court")}
           </a>
         </div>
       </div>
 
       <div>
         <a href="https://napr.gov.ge/" target="_blank">
-          Public Registry of Georgia
+        {t("registry")}
         </a>
       </div>
       <div>
         <a href="https://ecd.court.ge/" target="_blank">
-          Find your Case
+        {t("case")}
         </a>
       </div>
       <div className={classes.icons}>

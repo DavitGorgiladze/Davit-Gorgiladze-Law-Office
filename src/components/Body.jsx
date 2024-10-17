@@ -1,27 +1,22 @@
 import React from "react";
 import classes from "./Body.module.css";
-
+import { useTranslation } from "react-i18next";
+import "./i18next";
 
 export default function Body() {
+  const { t } = useTranslation();
+
   return (
     <div className={classes.body}>
       <div className={classes.bodycontainer}>
         <div className={classes.namefield}>
-          <div className={classes.name}>Davit Gorgiladze</div>
-          <div className={classes.field}>
-            Lawyer on Civil and Administrative Cases
-          </div>
+          <div className={classes.name}>{t("namesurname")}</div>
+          <div className={classes.field}>{t("field")}</div>
         </div>
-        <div className={classes.principles}>
-          Principles are Loyalty, Quality, Effectiveness
-        </div>
+        <div className={classes.principles}>{t("principles")}</div>
         <div className={classes.callcontainer}>
-          <div className={classes.call}>
-            Need Assistance ? CALL ME (+995) 577 382 997
-          </div>
-          <div className={classes.consultation}>
-            Consultation is <p>FREE OF CHARGE</p>
-          </div>
+          <div className={classes.call}>{t("call")}</div>
+          <div className={classes.consultation}>{t("consultation")}</div>
         </div>
       </div>
     </div>

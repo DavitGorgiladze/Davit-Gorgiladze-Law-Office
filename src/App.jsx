@@ -6,19 +6,26 @@ import About from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import Contact from "./components/Contact.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
-export default function () {
+export default function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleMode = () => {
+    setDarkMode((prevState) => !prevState);
+  };
+
   return (
     <>
       <div className="container">
-        <div className="navbar-body">
+        <div className="navbar-body" id={darkMode ? "darkMode" : ""}>
           <BrowserRouter>
             <Routes>
               <Route
                 index
                 element={
                   <>
-                    <Navbar />
+                    <Navbar toggle={toggleMode} darkmode={darkMode} />
                     <Body />
                     <Footer />
                   </>
@@ -28,7 +35,7 @@ export default function () {
                 path="/"
                 element={
                   <>
-                    <Navbar />
+                    <Navbar toggle={toggleMode} darkmode={darkMode} />
                     <Body />
                     <Footer />
                   </>
@@ -38,7 +45,7 @@ export default function () {
                 path="/about"
                 element={
                   <>
-                    <Navbar />
+                    <Navbar toggle={toggleMode} darkmode={darkMode} />
                     <About />
                     <Footer />
                   </>
@@ -48,7 +55,7 @@ export default function () {
                 path="/services"
                 element={
                   <>
-                    <Navbar />
+                    <Navbar toggle={toggleMode} darkmode={darkMode} />
                     <Services />
                     <Footer />
                   </>
@@ -58,7 +65,7 @@ export default function () {
                 path="/contact"
                 element={
                   <>
-                    <Navbar />
+                    <Navbar toggle={toggleMode} darkmode={darkMode} />
                     <Contact />
                     <Footer />
                   </>

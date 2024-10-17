@@ -6,9 +6,13 @@
 }
 
 
-
 .navbar-body {
   background-image: url(assets/theme.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#darkMode {
+  background-image: none;
+  background-color: black;
 }
