@@ -1,34 +1,39 @@
 import React from "react";
 import classes from "./Services.module.css";
+import { useTranslation } from "react-i18next";
+import "./i18next";
 
 export default function Services() {
+  const { t } = useTranslation();
   return (
     <div className={classes.servicescontainer}>
       <div className={classes.servicelist}>
         <ul>
-          <li>Lands and Real Estate</li>
-          <li>Building Disputes</li>
-          <li>Heritage and Family</li>
+          <li>{t("lands")}</li>
+          <li>{t("building")}</li>
+          <li>{t("heritage")}</li>
         </ul>
 
         <ul>
-          <li>Contracts</li>
-          <li>Labour</li>
-          <li>Immigration</li>
+          <li>{t("contracts")}</li>
+          <li>{t("labour")}</li>
+          <li>{t("immigration")}</li>
         </ul>
 
         <ul>
-          <li>Social Security</li>
-          <li> Refugees</li>
-          <li>Ecomigrants</li>
+          <li>{t("security")}</li>
+          <li>{t("refugees")}</li>
+          <li>{t("ecomigrants")}</li>
         </ul>
         <ul>
-          <li>Licenses</li>
-          <li>Permissions</li>
-          <li>Accreditations</li>
+          <li>{t("licenses")}</li>
+          <li>{t("permissions")}</li>
+          <li>{t("accreditations")}</li>
         </ul>
       </div>
-      <div className={classes.servicepopup}>MAKE A CALL AND FINISH YOUR PROBLEM</div>
+      <div className={classes.servicepopup}>
+        {t(`solveproblem`)}
+      </div>
     </div>
   );
 }

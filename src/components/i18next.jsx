@@ -73,6 +73,34 @@ i18n.use(initReactI18next).init({
 
         university1: `David studied at the Caucasus University in 2015-2019, where he was
           awarded a bachelor's degree in law.`,
+
+        //
+
+        lands: `Lands and Real Estate`,
+        building: `Corporate and Building Disputes`,
+        heritage: `Heritage and Family`,
+        contracts: `Contracts`,
+        labour: `Labour`,
+        immigration: `Immigration`,
+        security: `Social Security`,
+        refugees: `Refugees`,
+        ecomigrants: `Ecomigrants`,
+        licenses: `Licenses`,
+        permissions: `Permissions`,
+        accreditations: `Accreditations`,
+        solveproblem: `MAKE A CALL AND FINISH YOUR PROBLEM`,
+
+        //
+
+        getintouch: `GET IN TOUCH`,
+        address: `Grigol Eliava 29, Batumi, Georgia`,
+        entername: `Enter your Name and Surname`,
+        enterphone: `Enter your Phone Number`,
+        enteremail: `Enter your Email (optional)`,
+        enterquestion: `Write down your question!`,
+        sendform: `Send`,
+
+        //
       },
     },
 
@@ -122,6 +150,34 @@ i18n.use(initReactI18next).init({
         exp2017: `2017 წელს იყო რევაზ ფუტკარაძის საადვოკატო ოფისის სტაჟიორი, სადაც გაეცნო არაერთ საქმეს და ჯგუფის სხვა წევრებთან ერთად განიხილავდა მათ, ასევე ამზებდა სხვადასხვა სახის დოკუმენტებს. `,
         university2: `დავითი არის ივანე ჯავახიშვილის სახელობის თბილისის სახელმწიფო უნივერსიტეტის მაგისტრი კერძო სამართლის მიმართულებით, 2019-2021.`,
         university1: `დავითი სწავლობდა კავკასიის უნივერსიტეტში 2015-2019 წლებში, სადაც მიენიჭა სამართლის ბაკალავრის ხარისხი.`,
+
+        //
+
+        lands: `მიწის ნაკვეთები და უძრავი ქონება`,
+        building: `საკორპორაციო და სამშენებლო დავები`,
+        heritage: `მემკვიდრეობა და ქორწინება`,
+        contracts: `ხელშეკრულებები`,
+        labour: `შრომითი საკითხები`,
+        immigration: `საიმიგრაციო დავები`,
+        security: `სოციალური დაცვა`,
+        refugees: `დევნილთა საკითხები`,
+        ecomigrants: `ეკომიგრანტები`,
+        licenses: `ლიცენზიები`,
+        permissions: `ნებართვები`,
+        accreditations: `აკრედიტაცია`,
+        solveproblem: `დარეკე და მოაგვარე პრობლემა`,
+
+        //
+
+        getintouch: `დაგვიკავშირდით`,
+        address: `ბათუმი, გრიგოლ ელიავას 29`,
+        entername: `შეიყვანეთ თქვენი სახელი და გვარი`,
+        enterphone: `შეიყვანეთ თქვენი მობილურის ნომერი`,
+        enteremail: `შეიყვანეთ თქვენი მეილი`,
+        enterquestion: `დაწერეთ თქვენი შეკითხვა`,
+        sendform: `გაგზავნა`,
+
+        //
       },
     },
 
@@ -181,6 +237,34 @@ i18n.use(initReactI18next).init({
 виды документов.`,
         university2: `Давид — магистр частного права в Тбилисском государственном университете имени Иване Джавахишвили, 2019–2021.`,
         university1: `В 2015-2019 годах Дэвид учился в Кавказском университете, где ему была присвоена степень бакалавра права.`,
+
+        //
+
+        lands: `Земля и недвижимость`,
+        building: `Корпоративные и строительные споры`,
+        heritage: `Наследие и семья`,
+        contracts: `Контракты`,
+        labour: `Труд`,
+        immigration: `Иммиграция`,
+        security: `Социальное обеспечение`,
+        refugees: `Беженцы`,
+        ecomigrants: `Экомигранты`,
+        licenses: `Лицензии`,
+        permissions: `Разрешения`,
+        accreditations: `Аккредитации`,
+        solveproblem: `Позвоните и решите вашу проблему`,
+
+        //
+
+        getintouch: `Связаться с нами`,
+        address: `Григол Элиава 29, Батуми, Грузия`,
+        entername: `Введите свое имя и фамилию`,
+        enterphone: `Введите ваш номер телефона`,
+        enteremail: `Введите свой адрес электронной почты`,
+        enterquestion: `Запишите свой вопрос!`,
+        sendform: `Отправлять`,
+
+        //
       },
     },
   },

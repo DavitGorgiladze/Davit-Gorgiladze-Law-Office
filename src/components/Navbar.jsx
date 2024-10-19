@@ -16,6 +16,9 @@ export default function Navbar({ darkmode, toggle }) {
   ];
 
   const [menuClicked, setMenuClicked] = useState(false);
+
+  // 
+
   // const [navBlack, setNavBlack] = useState(false);
 
   // useEffect(() => {
@@ -23,6 +26,8 @@ export default function Navbar({ darkmode, toggle }) {
   //     window.scrollY > 80 ? setNavBlack(true) : setNavBlack(false);
   //   });
   // }, []);
+
+  // 
 
   const handleMenu = () => {
     setMenuClicked((menu) => !menu);
@@ -32,7 +37,10 @@ export default function Navbar({ darkmode, toggle }) {
     <>
       <nav
         className={`${classes.navbar} ${menuClicked ? "" : classes.mobilebar}`}
+        // 
         // className={`${classes.navbar} ${navBlack ? classes["nav-black"] : ""}`}
+
+        // 
       >
         <div className={classes.logocontainer}>
           <Link to="/">
